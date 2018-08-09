@@ -1,0 +1,14 @@
+<h1>Individual Recipe</h1>
+
+<ul>
+  <li><%= @recipe.name %></li>
+  <li><%= @recipe.ingredients %></li>
+  <li><%= @recipe.cook_time %> minutes</li>
+</ul>
+
+<!-- <button id="delete">Delete</buttton> -->
+<form method="post" action="/recipes/<%=@recipe.id%>/delete">
+    <input id="hidden" type="hidden" name="_method" value="delete">
+
+  <input type="submit" value="delete">
+</form>
