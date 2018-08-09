@@ -1,1 +1,4 @@
-#Placeholder for a model
+class Recipe < ActiveRecord::Base
+  #relationship macros -- if needed
+
+end
