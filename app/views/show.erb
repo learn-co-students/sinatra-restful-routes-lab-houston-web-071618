@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= recipe[:name] %></title>
+</head>
+<body>
+  <h1>Recipe: <%= @recipe[:name] %></h1>
+  <p>Ingredients: <%= @recipe[:ingredients] %></p>
+  <p>Cooking Time: <%= @recipe[:cook_time] %></p>
+  
+  <form action="/recipes/<%=@recipe[:id]%>/delete" method="post">
+    <input type="hidden" name="_method" id="hidden">
+  </form>
+</body>
+</html>
